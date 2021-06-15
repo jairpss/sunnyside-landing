@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Fraunces:wght@500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+header {
+  background-image: url("./../images/desktop/image-header.jpg");
+  height: 540px;
+  /*-----------Links and button--------------*/
+  /*-----------Logo--------------*/
+}
+
+header .header-nav {
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  color: white;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header li {
+  padding-left: 20px;
+  padding-right: 20px;
+  list-style: none;
+}
+
+header .header-nav-link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  font-family: "Barlow", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  padding-bottom: 8px;
+  font-weight: 500;
+}
+
+header .header-nav-btn {
+  background-color: white;
+  color: #23303e;
+  border: none;
+  text-transform: uppercase;
+  padding: 18px 26px;
+  text-decoration: none;
+  border-radius: 100px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  font-family: "Fraunces", serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+header .header-nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  color: white;
+}
+
+header .header-nav-logo:hover {
+  cursor: pointer;
+}
+
+header .hero-text {
+  color: white;
+  font-size: 2.3rem;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  padding-bottom: 100px;
+  margin-top: 100px;
+}
+
+header .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .header-nav {
+    padding: 20px 100px;
+  }
+  .burger {
+    display: none;
+  }
+  .header-nav-links {
+    position: inherit;
+    right: 0px;
+    left: 42vw;
+    height: 80px;
+    top: 0;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .header-nav-links li {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .header-nav-btn {
+    margin-left: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

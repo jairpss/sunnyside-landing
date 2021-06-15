@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Fraunces:wght@500;600;700;800;900&display=swap");
+
+//##Fonts
+
+$font-text: "Barlow", sans-serif;
+$font-title: "Fraunces", serif;
+$font-size: 18px;
+
+// ## Layout
+// The designs were created to the following widths:
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+$soft-red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+// (graphic design text)
+$dark-desaturate-cyan: hsl(167, 40%, 24%);
+// (photography text)
+$dark-blue: hsl(198, 62%, 26%);
+// (footer)
+$dark-moderate-cyan: hsl(168, 34%, 41%);
+
+// ### Neutral
+$very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$very-dark-grayish-blue: hsl(213, 9%, 39%);
+$dark-grayish-blue: hsl(232, 10%, 55%);
+$grayish-blue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: $font-size;
+}
+
+//--------------------------Header-------------------------------
+
+header {
+  background-image: url("./../images/desktop/image-header.jpg");
+  height: 540px;
+
+  .header-nav {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    color: $white;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+  }
+  /*-----------Links and button--------------*/
+  .header-nav-link {
+    color: $white;
+    text-decoration: none;
+    position: relative;
+    // padding: 0 20px;
+    font-family: $font-text;
+    font-size: 0.8rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+    transition: all ease-in-out 0.2s;
+    padding-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .header-nav-btn {
+    background-color: $white;
+    color: $very-dark-desaturated-blue;
+    border: none;
+    text-transform: uppercase;
+    padding: 18px 26px;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all ease-in-out 0.2s;
+    font-family: $font-title;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-align: center;
+
+    &:hover {
+      background-color: hsla(255, 255, 255, 0.3);
+      cursor: pointer;
+      color: $white;
+    }
+  }
+  /*-----------Logo--------------*/
+  .header-nav-logo:hover {
+    cursor: pointer;
+  }
+
+  .hero-text {
+    color: $white;
+    font-size: 2.3rem;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-title;
+    padding-bottom: 100px;
+    margin-top: 100px;
+  }
+
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+//----------------------------------MEDIA QUERIES-------------------------------
+
+@media screen and (min-width: 1440px) {
+  .header-nav {
+    padding: 20px 100px;
+  }
+
+  .burger {
+    display: none;
+  }
+  .header-nav-links {
+    position: inherit;
+    right: 0px;
+    left: 42vw;
+    height: 80px;
+    top: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    transform: translateX(0%);
+
+    li {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .header-nav-btn {
+    margin-left: 20px;
+  }
+}
