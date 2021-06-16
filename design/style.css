@@ -13,7 +13,9 @@ html {
 
 header {
   background-image: url("./../images/desktop/image-header.jpg");
-  height: 540px;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
   /*-----------Links and button--------------*/
   /*-----------Logo--------------*/
 }
@@ -53,13 +55,18 @@ header .header-nav-link {
   text-decoration: none;
   position: relative;
   font-family: "Barlow", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
   letter-spacing: 0.05em;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   padding-bottom: 8px;
   font-weight: 500;
+  opacity: 0.9;
+}
+
+header .header-nav-link:hover {
+  opacity: 1;
 }
 
 header .header-nav-btn {
@@ -109,6 +116,73 @@ header .arrow {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.main-brand {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 75vh;
+      grid-template-rows: 75vh;
+}
+
+.main-brand .main-brand_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding: 8rem;
+}
+
+.main-brand .main-brand_text h2 {
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  font-size: 2rem;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 1.9rem;
+}
+
+.main-brand .main-brand_text p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: #818498;
+  display: block;
+  margin-bottom: 1.9rem;
+}
+
+.main-brand .main-brand_text a {
+  text-decoration: none;
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #23303e;
+  background-image: linear-gradient(120deg, #fef4b7 0%, #fef4b7 50%);
+  background-repeat: no-repeat;
+  background-size: 25% 20%;
+  background-position: 0 100%;
+  -webkit-transition: background-size 0.18s ease-in;
+  transition: background-size 0.18s ease-in;
+}
+
+.main-brand .main-brand_text a:hover {
+  background-size: 25% 50%;
+}
+
+.main-brand .main-brand_img {
+  background-image: url("./../images/desktop/image-transform.jpg");
+  height: auto;
+  background-position: center;
+  background-size: cover;
 }
 
 @media screen and (min-width: 1440px) {

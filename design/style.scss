@@ -45,7 +45,9 @@ html {
 
 header {
   background-image: url("./../images/desktop/image-header.jpg");
-  height: 540px;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
 
   .header-nav {
     position: static;
@@ -73,12 +75,16 @@ header {
     position: relative;
     // padding: 0 20px;
     font-family: $font-text;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: center;
     letter-spacing: 0.05em;
     transition: all ease-in-out 0.2s;
     padding-bottom: 8px;
     font-weight: 500;
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .header-nav-btn {
@@ -121,6 +127,59 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+.main-brand {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 75vh;
+
+  .main-brand_text {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 8rem;
+    h2 {
+      font-family: $font-title;
+      color: $very-dark-desaturated-blue;
+      font-size: 2rem;
+      font-weight: 900;
+      display: block;
+      margin-bottom: 1.9rem;
+    }
+    p {
+      font-family: $font-text;
+      font-weight: 500;
+      color: $dark-grayish-blue;
+      display: block;
+      margin-bottom: 1.9rem;
+    }
+    a {
+      text-decoration: none;
+      font-family: $font-title;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: $very-dark-desaturated-blue;
+      background-image: linear-gradient(120deg, #fef4b7 0%, #fef4b7 50%);
+      background-repeat: no-repeat;
+      background-size: 25% 20%;
+      background-position: 0 100%;
+      transition: background-size 0.18s ease-in;
+      &:hover {
+        background-size: 25% 50%;
+      }
+    }
+  }
+
+  .main-brand_img {
+    background-image: url("./../images/desktop/image-transform.jpg");
+    height: auto;
+    background-position: center;
+    background-size: cover;
   }
 }
 
