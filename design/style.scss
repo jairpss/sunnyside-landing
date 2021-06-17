@@ -156,6 +156,7 @@ header {
       color: $dark-grayish-blue;
       display: block;
       margin-bottom: 1.9rem;
+      line-height: 1.8rem;
     }
     a {
       text-decoration: none;
@@ -180,6 +181,202 @@ header {
     height: auto;
     background-position: center;
     background-size: cover;
+  }
+}
+
+.main-audience {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 75vh;
+
+  .main-audience_img {
+    background-image: url("./../images/desktop/image-stand-out.jpg");
+    height: auto;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main-audience_text {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 8rem;
+    h2 {
+      font-family: $font-title;
+      color: $very-dark-desaturated-blue;
+      font-size: 2rem;
+      font-weight: 900;
+      display: block;
+      margin-bottom: 1.9rem;
+    }
+    p {
+      font-family: $font-text;
+      font-weight: 500;
+      color: $dark-grayish-blue;
+      display: block;
+      margin-bottom: 1.9rem;
+      line-height: 1.8rem;
+    }
+    a {
+      text-decoration: none;
+      font-family: $font-title;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: $very-dark-desaturated-blue;
+      background-image: linear-gradient(120deg, #fdb9ae 0%, #fdb9ae 50%);
+      background-repeat: no-repeat;
+      background-size: 25% 20%;
+      background-position: 0 100%;
+      transition: background-size 0.18s ease-in;
+      &:hover {
+        background-size: 25% 50%;
+      }
+    }
+  }
+}
+
+.main-images {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 75vh;
+
+  .main-images_green {
+    background-image: url("./../images/desktop/image-graphic-design.jpg");
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    .main-images_green-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20rem 8rem;
+      h3 {
+        font-family: $font-title;
+        color: $dark-desaturate-cyan;
+        font-size: 1.8rem;
+        font-weight: 900;
+        display: block;
+        margin-bottom: 1.9rem;
+      }
+      p {
+        font-family: $font-text;
+        font-weight: 600;
+        color: $dark-desaturate-cyan;
+        display: block;
+        margin-bottom: 1.9rem;
+        text-align: center;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  .main-images_blue {
+    background-image: url("./../images/desktop/image-photography.jpg");
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    .main-images_blue-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20rem 8rem;
+      h3 {
+        font-family: $font-title;
+        color: $dark-blue;
+        font-size: 1.8rem;
+        font-weight: 900;
+        display: block;
+        margin-bottom: 1.9rem;
+      }
+      p {
+        font-family: $font-text;
+        font-weight: 600;
+        color: $dark-blue;
+        display: block;
+        margin-bottom: 1.9rem;
+        text-align: center;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .testimonials-title {
+    padding-top: 10rem;
+    margin-bottom: 4rem;
+    h3 {
+      font-family: $font-title;
+      color: $grayish-blue;
+      font-size: 1.4rem;
+      font-weight: 900;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+    }
+  }
+
+  .testimonials-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 5rem;
+    margin-bottom: 10rem;
+    .card {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      align-items: center;
+      .card-pic {
+        margin-bottom: 2rem;
+        img {
+          border-radius: 50%;
+          height: 4rem;
+          width: 4rem;
+        }
+      }
+      .card-text {
+        width: 20rem;
+        margin-bottom: 2rem;
+        p {
+          font-family: $font-text;
+          font-weight: 600;
+          color: $very-dark-grayish-blue;
+          text-align: center;
+          line-height: 1.5rem;
+          font-size: 0.9rem;
+          padding: 1rem;
+        }
+      }
+      .card-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card-name_title {
+          font-family: $font-title;
+          color: $very-dark-desaturated-blue;
+          font-size: 1rem;
+          font-weight: 900;
+          margin-bottom: 0.7rem;
+        }
+        .card-name_job {
+          font-family: $font-text;
+          font-weight: 600;
+          color: $grayish-blue;
+          font-size: 0.8rem;
+        }
+      }
+    }
   }
 }
 

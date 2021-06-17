@@ -157,6 +157,7 @@ header .arrow {
   color: #818498;
   display: block;
   margin-bottom: 1.9rem;
+  line-height: 1.8rem;
 }
 
 .main-brand .main-brand_text a {
@@ -183,6 +184,285 @@ header .arrow {
   height: auto;
   background-position: center;
   background-size: cover;
+}
+
+.main-audience {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 75vh;
+      grid-template-rows: 75vh;
+}
+
+.main-audience .main-audience_img {
+  background-image: url("./../images/desktop/image-stand-out.jpg");
+  height: auto;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-audience .main-audience_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding: 8rem;
+}
+
+.main-audience .main-audience_text h2 {
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  font-size: 2rem;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 1.9rem;
+}
+
+.main-audience .main-audience_text p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: #818498;
+  display: block;
+  margin-bottom: 1.9rem;
+  line-height: 1.8rem;
+}
+
+.main-audience .main-audience_text a {
+  text-decoration: none;
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #23303e;
+  background-image: linear-gradient(120deg, #fdb9ae 0%, #fdb9ae 50%);
+  background-repeat: no-repeat;
+  background-size: 25% 20%;
+  background-position: 0 100%;
+  -webkit-transition: background-size 0.18s ease-in;
+  transition: background-size 0.18s ease-in;
+}
+
+.main-audience .main-audience_text a:hover {
+  background-size: 25% 50%;
+}
+
+.main-images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 75vh;
+      grid-template-rows: 75vh;
+}
+
+.main-images .main-images_green {
+  background-image: url("./../images/desktop/image-graphic-design.jpg");
+  height: auto;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-images .main-images_green .main-images_green-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20rem 8rem;
+}
+
+.main-images .main-images_green .main-images_green-text h3 {
+  font-family: "Fraunces", serif;
+  color: #25564b;
+  font-size: 1.8rem;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 1.9rem;
+}
+
+.main-images .main-images_green .main-images_green-text p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: #25564b;
+  display: block;
+  margin-bottom: 1.9rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.main-images .main-images_blue {
+  background-image: url("./../images/desktop/image-photography.jpg");
+  height: auto;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-images .main-images_blue .main-images_blue-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20rem 8rem;
+}
+
+.main-images .main-images_blue .main-images_blue-text h3 {
+  font-family: "Fraunces", serif;
+  color: #19536b;
+  font-size: 1.8rem;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 1.9rem;
+}
+
+.main-images .main-images_blue .main-images_blue-text p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: #19536b;
+  display: block;
+  margin-bottom: 1.9rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonials .testimonials-title {
+  padding-top: 10rem;
+  margin-bottom: 4rem;
+}
+
+.testimonials .testimonials-title h3 {
+  font-family: "Fraunces", serif;
+  color: #a7abae;
+  font-size: 1.4rem;
+  font-weight: 900;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.testimonials .testimonials-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 5rem;
+  margin-bottom: 10rem;
+}
+
+.testimonials .testimonials-cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials .testimonials-cards .card .card-pic {
+  margin-bottom: 2rem;
+}
+
+.testimonials .testimonials-cards .card .card-pic img {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+
+.testimonials .testimonials-cards .card .card-text {
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+
+.testimonials .testimonials-cards .card .card-text p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: #5a636c;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+
+.testimonials .testimonials-cards .card .card-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials .testimonials-cards .card .card-name .card-name_title {
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  font-size: 1rem;
+  font-weight: 900;
+  margin-bottom: 0.7rem;
+}
+
+.testimonials .testimonials-cards .card .card-name .card-name_job {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: #a7abae;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 1440px) {
